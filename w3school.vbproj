@@ -61,11 +61,14 @@
     <Content Include=".gitattributes" />
     <Content Include=".gitignore" />
     <Content Include="config.xml" />
+    <Content Include="www\Calendar.html" />
     <Content Include="www\css\index.css" />
+    <Content Include="www\DatePicker.html" />
     <Content Include="www\icon.png" />
     <Content Include="www\img\logo.png" />
     <Content Include="www\index.html" />
     <Content Include="www\js\index.js" />
+    <Content Include="www\PanelBar.html" />
     <Content Include="www\res\icon\android\icon-36-ldpi.png" />
     <Content Include="www\res\icon\android\icon-48-mdpi.png" />
     <Content Include="www\res\icon\android\icon-72-hdpi.png" />
@@ -109,6 +112,7 @@
     <Content Include="www\res\screen\webos\screen-64.png" />
     <Content Include="www\res\screen\windows-phone\screen-portrait.jpg" />
     <Content Include="www\spec.html" />
+    <Content Include="www\GeoLocation.html" />
     <Content Include="www\spec\helper.js" />
     <Content Include="www\spec\index.js" />
     <Content Include="www\spec\lib\jasmine-1.2.0\jasmine-html.js" />

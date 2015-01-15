@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <base href="http://demos.telerik.com/kendo-ui/panelbar/images">
+    <style>html { font-size: 12px; font-family: Arial, Helvetica, sans-serif; }</style>
+    <title></title>
+    <link rel="stylesheet" href="http://cdn.kendostatic.com/2014.3.1314/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="http://cdn.kendostatic.com/2014.3.1314/styles/kendo.default.min.css" />
+    <link rel="stylesheet" href="http://cdn.kendostatic.com/2014.3.1314/styles/kendo.dataviz.min.css" />
+    <link rel="stylesheet" href="http://cdn.kendostatic.com/2014.3.1314/styles/kendo.dataviz.default.min.css" />
+
+    <script src="http://cdn.kendostatic.com/2014.3.1314/js/jquery.min.js"></script>
+    <script src="http://cdn.kendostatic.com/2014.3.1314/js/kendo.all.min.js"></script>
+</head>
+<body>
+
+
+        <div id="example">
+
+            <div class="demo-section k-header">
+
+                <h4>PanelBar with images</h4>
+
+                <div id="panelbar-images"></div>
+
+            </div>
+
+            <script>
+                $("#panelbar-images").kendoPanelBar({
+                    dataSource: [
+                        {
+                            text: "Baseball", imageUrl: "../content/shared/icons/sports/baseball.png",
+                            items: [
+                                { text: "Top News", imageUrl: "../content/shared/icons/16/star.png" },
+                                { text: "Photo Galleries", imageUrl: "../content/shared/icons/16/photo.png" },
+                                { text: "Videos Records", imageUrl: "../content/shared/icons/16/video.png" },
+                                { text: "Radio Records", imageUrl: "../content/shared/icons/16/speaker.png" }
+                            ]
+                        },
+                        {
+                            text: "Golf", imageUrl: "../content/shared/icons/sports/golf.png",
+                            items: [
+                                { text: "Top News", imageUrl: "../content/shared/icons/16/star.png" },
+                                { text: "Photo Galleries", imageUrl: "../content/shared/icons/16/photo.png" },
+                                { text: "Videos Records", imageUrl: "../content/shared/icons/16/video.png" },
+                                { text: "Radio Records", imageUrl: "../content/shared/icons/16/speaker.png" }
+                            ]
+                        },
+                        {
+                            text: "Swimming", imageUrl: "../content/shared/icons/sports/swimming.png",
+                            items: [
+                                { text: "Top News", imageUrl: "../content/shared/icons/16/star.png" },
+                                { text: "Photo Galleries", imageUrl: "../content/shared/icons/16/photo.png" }
+                            ]
+                        },
+                        {
+                            text: "Snowboarding", imageUrl: "../content/shared/icons/sports/snowboarding.png",
+                            items: [
+                                { text: "Photo Galleries", imageUrl: "../content/shared/icons/16/photo.png" },
+                                { text: "Videos Records", imageUrl: "../content/shared/icons/16/video.png" }
+                            ]
+                        }
+                    ]
+                });
+            </script>
+
+            <div class="demo-section k-header">
+
+                <h4>PanelBar with sprites</h4>
+
+                <div id="panelbar-sprites"></div>
+
+            </div>
+
+            <script>
+                $("#panelbar-sprites").kendoPanelBar({
+                    dataSource: [{
+                        text: "Brazil", spriteCssClass: "brazilFlag", items: [
+                            { text: "History", spriteCssClass: "historyIcon" },
+                            { text: "Geography", spriteCssClass: "geographyIcon" }
+                        ]
+                    },
+                        {
+                            text: "India", spriteCssClass: "indiaFlag", items: [
+                                { text: "History", spriteCssClass: "historyIcon" },
+                                { text: "Geography", spriteCssClass: "geographyIcon" }
+                            ]
+                        },
+                        {
+                            text: "Netherlands", spriteCssClass: "netherlandsFlag", items: [
+                                { text: "History", spriteCssClass: "historyIcon" },
+                                { text: "Geography", spriteCssClass: "geographyIcon" }
+                            ]
+                        }]
+                });
+            </script>
+
+            <style scoped>
+                .k-panel
+                {
+                    -webkit-transform: translatez(0);
+                }
+
+                .demo-section {
+                	width: 400px;
+                }
+                #panelbar-images > .k-item > .k-link > .k-image
+                {
+                    margin-top: 2px;
+                    margin-left: -5px;
+                }
+
+                #panelbar-sprites > .k-item > .k-link > .k-sprite
+                {
+                    margin-top: 6px;
+                }
+
+                #panelbar-sprites .k-sprite {
+                    background-image: url("../content/shared/styles/flags.png");
+                }
+                .brazilFlag {
+                	background-position: 0 0;
+                }
+                .indiaFlag {
+                	background-position: 0 -32px;
+                }
+                .netherlandsFlag {
+                	background-position: 0 -64px;
+                }
+                .historyIcon {
+                	background-position: 0 -96px;
+                }
+                .geographyIcon {
+                	background-position: 0 -128px;
+                }
+            </style>
+        </div>
+
+
+</body>
+</html>
